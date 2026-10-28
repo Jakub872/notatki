@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/pole"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Nowy element"
+            />
+
+        <Button
+            android:id="@+id/dodaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DODAJ"
+            android:background="#DC143C"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_height="500dp"
+        android:divider="#DC143C"
+        android:dividerHeight="1dp"/>
+
+    <Button
+        android:id="@+id/zapisz"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz listę do pliku"
+        android:background="#DC143C"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/wyczysc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyczyść"
+        android:background="#DC143C"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/wczytaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wczytaj listę z pliku"
+        android:background="#DC143C"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
